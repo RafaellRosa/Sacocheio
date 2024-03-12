@@ -3,7 +3,6 @@ body {
   color: white;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -44,4 +43,17 @@ headerButtons {
   font: bold 16px Roboto, sans-serif;
   color: #CC9F2E;
 
+}
+
+welcome {
+  color: white;
+  font: 400 36px Inter, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 120px 40px;
+}
+
+yellow {
+  color: #CC9F2E;
 }
