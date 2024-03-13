@@ -58,15 +58,13 @@ yellow {
   color: #CC9F2E;
 }
 
-.images {
-  margin: auto;
-  overflow: visible;
-}
+
 
 .images img {
-  width: 100%;
+  width: 1000px;
   margin: auto;
-  object-fit: contain;
+  object-fit: fill;
+  height: 500px;
 }
 
 .slidesText {
@@ -74,24 +72,23 @@ yellow {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  margin: 10%;
-  max-width: 70%;
+  margin: 70px;
+  max-width: 35%;
   min-width: 20%;
   text-align: center;
+
 }
 
 sliderImages {
   justify-content: center;
   display: flex;
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1000px;
   object-fit:scale-down;
   max-height: 500px;
-  
+  margin: auto;
+  overflow: visible;
 }
-
-
-
 
 sliderImages p {
   font: 400 14px Inter, sans-serif;
@@ -109,7 +106,7 @@ sliderImages h1 {
 
 sliderbutton {
   position: absolute;
-  bottom: 15%;
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
