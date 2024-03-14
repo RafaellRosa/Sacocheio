@@ -1,45 +1,37 @@
 const images = document.querySelectorAll('.images img');
 let index = 0;
-console.log(images.length);
 const text = document.querySelectorAll('.slidesText text');
-console.log(text.length);
-const buttons =  document.querySelectorAll('.selectButton button ');
+const selectButton = document.querySelectorAll('.buttonstoselect button');
+console.log(selectButton.length, selectButton[1]);
+
 
 
 
 
 function sliderAction() {
- images.forEach(image => image.style.display = 'none');
- images[index].style.display = 'block';
- index = (index + 1) % images.length;
- text.forEach(text => text.style.display = 'none');
- text[index].style.display = 'block';
+  images.forEach(image => image.style.display = 'none');
+  images[index].style.display = 'block';
+  index = (index + 1) % images.length;
+  text.forEach(text => text.style.display = 'none');
+  text[index].style.display = 'block';
+
+
+  selectButton[index].classList.remove('selectedButton');
+  selectButton[index].classList.add('selectedButton');
+  selectButton[index].classList.remove('selectbutton');
 
 
 
+}
 
 
-  buttons.forEach( (button, i) => {
-    buttons.addEventLister('click', () => {
-      index = i;
-    })
-   }) 
-  }
+function clique (valor) {
+  index = valor;
+  sliderAction();
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
 sliderAction();
-setInterval(sliderAction, 10000);
+setInterval(sliderAction, 3000);

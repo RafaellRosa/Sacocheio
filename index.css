@@ -131,3 +131,7 @@ sliderbutton {
 .selectbutton:hover {
   cursor: pointer;
 }
+
+.selectedButton {
+  background-color: #CC9F2E;
+}
