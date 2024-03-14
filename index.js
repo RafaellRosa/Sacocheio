@@ -34,4 +34,4 @@ function clique (valor) {
 
 
 sliderAction();
-setInterval(sliderAction, 3000);
+setInterval(sliderAction, 7000);
