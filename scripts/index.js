@@ -17,8 +17,10 @@ function sliderAction() {
 
 
     selectButton.forEach(button => {button.classList.remove('selectedButton')});
-    selectButton[index].classList.remove('selectbutton');
+    selectButton[index].classList.remove('selectbutton');  
     selectButton[index].classList.add('selectedButton');
+    
+
 
 }
 
@@ -27,17 +29,18 @@ function clique (valor) {
 
   index = valor;
 
-  
+  clearInterval(intervalId);
+  intervalId = setInterval(() => {
+    index = (index + 1) % images.length;
+    sliderAction();
+  }, 5000);
     sliderAction();
 
 }
 
-
-
-sliderAction(); // Chamada inicial da função para configurar o slider corretamente
-setInterval(() => {
+sliderAction(); 
+let intervalId = setInterval(() => {
   index = (index + 1) % images.length;
-  sliderAction(); // Atualização automática do slider a cada 10 segundos
-}, 10000);
+  sliderAction(); 
+}, 5000);
 sliderAction();
-setInterval(sliderAction, 7000);
