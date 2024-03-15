@@ -39,3 +39,5 @@ setInterval(() => {
   index = (index + 1) % images.length;
   sliderAction(); // Atualização automática do slider a cada 10 segundos
 }, 10000);
+sliderAction();
+setInterval(sliderAction, 7000);
