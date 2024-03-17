@@ -226,3 +226,24 @@ maintext {
  margin-bottom: 90px;
   width: 390px;
 }
+
+.turnmember {
+  margin: auto;
+}
+
+memberskills {
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  justify-content: center;
+}
+
+membertext {
+  padding: 0px 107px 0px 21px;
+  border-radius: 10px;
+  width: 600px;
+}
+
+memberskills img {
+  width: 200px;
+}
