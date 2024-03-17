@@ -2,11 +2,6 @@ const images = document.querySelectorAll('.images img');
 let index = 0;
 const text = document.querySelectorAll('.slidesText text');
 const selectButton = document.querySelectorAll('.buttonstoselect button');
-console.log(selectButton.length, selectButton[1]);
-
-
-
-
 
 function sliderAction() {
   images.forEach(image => image.style.display = 'none');
@@ -19,11 +14,7 @@ function sliderAction() {
     selectButton.forEach(button => {button.classList.remove('selectedButton')});
     selectButton[index].classList.remove('selectbutton');  
     selectButton[index].classList.add('selectedButton');
-    
-
-
 }
-
 
 function clique (valor) {
 
@@ -35,7 +26,6 @@ function clique (valor) {
     sliderAction();
   }, 5000);
     sliderAction();
-
 }
 
 sliderAction(); 
