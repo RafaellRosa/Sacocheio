@@ -1,3 +1,5 @@
+import {podcasts} from "./podcasts.js";
+
 const images = document.querySelectorAll('.images img');
 let index = 0;
 const text = document.querySelectorAll('.slidesText text');
@@ -34,3 +36,16 @@ let intervalId = setInterval(() => {
   sliderAction(); 
 }, 5000);
 sliderAction();
+
+
+
+podcasts.forEach(podcast =>
+ { podcastsContainer.innerHTML += `
+  <pod class="podcastDiv">
+  <img src="images/podcastsicons/sacocheioicon.jpg" alt="" class="podcastIcon">
+  <article class="podcastInfo">
+    <h1 class="podcastName">${podcast.name}</h1>
+    <p class="podcastDescription"> ${podcast.info}</p>
+    <aside>${podcast.subinfo}</aside>
+  </article>
+</pod>  `});

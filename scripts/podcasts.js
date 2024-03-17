@@ -59,5 +59,4 @@ export let podcasts = [
   info: 'Arthur Petry conversa com convidados inesperados e extrai de cada um, o que está por trás da sua alma em um papo descontraído e sem mesmices de render.',
   subinfo: '101 episódios • De vez em quando'
 }
-
 ];
