@@ -65,19 +65,12 @@
       <img src="images/sliderimages/sc.jpg" alt="imagem do Podcast Saco Cheio" class="s">
       <img src="images/sliderimages/cagando.jpg" alt="imagem do Podcast Cagando e Andando" class="t">
     </sliderImages>
-    <img src="images/generalimages/arrow_right.png" alt="" class="arrow">
-    <h1>Podcasts</h1>
-    
   </main>
+    <titlemain class="titlemain">
+      <img src="images/generalimages/arrow_right.png" alt="" class="arrow">
+      <h1>Podcasts</h1>
+    </titlemain>
   <nav class="podcastContainer" id="podcastsContainer"> 
-      <pod class="podcastDiv">
-          <img src="images/podcastsicons/sacocheioicon.jpg" alt="" class="podcastIcon">
-          <article class="podcastInfo">
-            <h1 class="podcastName">Podcast Saco Cheio</h1>
-            <p class="podcastDescription">O programa é para ouvintes que não procuram cultura, informação ou opiniões inteligentes. Durante uma hora e meia Arthur Petry reduz o mundo inteiro ao seu próprio umbigo,</p>
-            <aside>235 episódios • Sextas-Feira</aside>
-          </article>
-      </pod>   
   </nav>
   <article class="petry">
     <maintext>
@@ -156,10 +149,9 @@
       </nav>
     </article>
    </footer>
-
-
-
-  <script src="scripts/index.js" type="module"></script>
-  <script type="module" src="scripts/podcasts.js"></script>
+   <script type="module">
+    import {clique, sliderAction} from '/scripts/index.js';
+   </script>
+  
 </body>
 </html>
