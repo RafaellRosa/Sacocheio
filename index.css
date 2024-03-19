@@ -5,11 +5,15 @@ body {
 }
 
 header {
+  margin: auto;
   display: flex;
+  max-width: 1150px;
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
   padding: 13px;
+  font: bold 16px Roboto, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 iconText {
@@ -73,32 +77,28 @@ yellow {
   align-items: center;
   position: absolute;
   margin: 70px;
-  width: 400px;
+  width: 500px;
   text-align: center;
+  font: 400 14px Inter, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 sliderImages {
   justify-content: center;
   display: flex;
-  justify-content: center;
-  max-width: 1000px;
-  object-fit:scale-down;
-  max-height: 500px;
   margin: auto;
   overflow: visible;
 }
 
 sliderImages p {
-  font: 400 14px Inter, sans-serif;
   display: inline;
   width: 500px;
-  margin-top: 0;
 }
 
 sliderImages h1 {
-  margin: 5px;
+  margin: 10px;
   font: bold 34px Inter, sans-serif;
-  max-width: 900px;
+  max-width: 1000px;
   min-width: 50px;
   color: white;
 }
@@ -156,6 +156,7 @@ a {
   background-color: #242424;
   width: 450px;
   padding: 50px;
+  font: 400 14px Roboto, sans-serif;
 }
 .podcastDiv h1 {
   font: bold 24px Inter, sans-serif;
@@ -264,24 +265,32 @@ footer {
   bottom: 0;
   width: 100%;
   margin-top: auto;
-}
-footer img {
-  width: 250px;
+  padding: 37px;
+  gap: 20px;
 }
 
-footer p h1 {
+footer img {
+  width: 250px;
+  border:#CC9F2E solid;
+}
+
+footer p {
   color: black;
+  font: 400 14px Roboto, sans-serif;
 }
 footer p, h1:hover {
   cursor: pointer;
+}
 
+footer h1 {
+  color: black;
+  font: bold 400 14px Roboto, sans-serif;
 }
 
 .footernav {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  margin: 30px;
+  gap: 20px;
 }
 
 .titlemain {
@@ -289,7 +298,6 @@ footer p, h1:hover {
   display: grid;
   width: 1100px;
   min-width: 1100px;
-
 }
 
 titlemain h1 {
