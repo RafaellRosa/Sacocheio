@@ -1,6 +1,7 @@
 import {podcasts} from "./podcasts.js";
 export {clique, sliderAction};
 window.clique = clique; 
+
 const images = document.querySelectorAll('.images img');
 let index = 0;
 const text = document.querySelectorAll('.slidesText text');
