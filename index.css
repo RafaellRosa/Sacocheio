@@ -276,7 +276,7 @@ footer img {
 
 footer p {
   color: black;
-  font: 400 14px Roboto, sans-serif;
+  font: bold 400 14px Roboto, sans-serif;
 }
 footer p, h1:hover {
   cursor: pointer;
